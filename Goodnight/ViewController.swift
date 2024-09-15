@@ -45,7 +45,7 @@ class ViewController: UIViewController {
         
     }
     
-    // test
+
     @IBOutlet weak var btnToggleAnimation: UIButton!
     @IBOutlet weak var btnReset: UIButton!
     @IBOutlet weak var btnNextImage: UIButton!
