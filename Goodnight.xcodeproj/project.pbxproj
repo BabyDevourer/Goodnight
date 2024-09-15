@@ -13,6 +13,7 @@
 		846597E02C7ADBF400C4BF2E /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 846597DF2C7ADBF400C4BF2E /* Base */; };
 		846597E22C7ADBF600C4BF2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 846597E12C7ADBF600C4BF2E /* Assets.xcassets */; };
 		846597E52C7ADBF600C4BF2E /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 846597E42C7ADBF600C4BF2E /* Base */; };
+		84F9574F2C96964300D75190 /* sleep-lofi.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84F9574E2C96964300D75190 /* sleep-lofi.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		846597E12C7ADBF600C4BF2E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		846597E42C7ADBF600C4BF2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		846597E62C7ADBF600C4BF2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84F9574E2C96964300D75190 /* sleep-lofi.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "sleep-lofi.mp3"; path = "../../../../Downloads/sleep-lofi.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		846597D72C7ADBF400C4BF2E /* Goodnight */ = {
 			isa = PBXGroup;
 			children = (
+				84F9574E2C96964300D75190 /* sleep-lofi.mp3 */,
 				846597D82C7ADBF400C4BF2E /* AppDelegate.swift */,
 				846597DA2C7ADBF400C4BF2E /* SceneDelegate.swift */,
 				846597DC2C7ADBF400C4BF2E /* ViewController.swift */,
@@ -125,6 +128,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84F9574F2C96964300D75190 /* sleep-lofi.mp3 in Resources */,
 				846597E22C7ADBF600C4BF2E /* Assets.xcassets in Resources */,
 				846597E52C7ADBF600C4BF2E /* Base in Resources */,
 				846597E02C7ADBF400C4BF2E /* Base in Resources */,

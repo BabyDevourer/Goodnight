@@ -1,24 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Goodnight" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qdn-Y7-nNB" userLabel="btnNext">
+                                <rect key="frame" x="175" y="585" width="64" height="39"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title=" Next"/>
+                                <connections>
+                                    <action selector="click:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hWn-Qa-ErX"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="goodnight-images/goodnight1" highlightedImage="goodnight-images/goodnight1" translatesAutoresizingMaskIntoConstraints="NO" id="lME-5v-TS3">
+                                <rect key="frame" x="0.0" y="150" width="414" height="414"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="lME-5v-TS3" secondAttribute="height" multiplier="1:1" id="Mlb-Dq-kH9"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lSF-re-85q">
+                                <rect key="frame" x="157" y="674" width="101" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="systemGreenColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Animation"/>
+                                <connections>
+                                    <action selector="toggleAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="css-Gi-Fex"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CRg-L9-ekg">
+                                <rect key="frame" x="175" y="740" width="68" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Reset"/>
+                                <connections>
+                                    <action selector="resetAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YfO-kb-lgQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.13788375259999999" green="0.16777521370000001" blue="0.21177041529999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="lME-5v-TS3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="102" id="OGA-Kw-5Fe"/>
+                            <constraint firstItem="Qdn-Y7-nNB" firstAttribute="top" secondItem="lME-5v-TS3" secondAttribute="bottom" constant="21" id="ORr-cj-QC8"/>
+                            <constraint firstItem="Qdn-Y7-nNB" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="OZz-rR-jie"/>
+                            <constraint firstItem="lME-5v-TS3" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="QK8-SD-sbh"/>
+                            <constraint firstItem="lME-5v-TS3" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" id="uBk-Cr-ULb"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="btnNextImage" destination="Qdn-Y7-nNB" id="YKd-pC-0BL"/>
+                        <outlet property="btnReset" destination="CRg-L9-ekg" id="zFN-el-B4M"/>
+                        <outlet property="btnToggleAnimation" destination="lSF-re-85q" id="DEb-zc-IrR"/>
+                        <outlet property="imgGoodnight" destination="lME-5v-TS3" id="mo6-6q-h8d"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="134.78260869565219" y="3.3482142857142856"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="goodnight-images/goodnight1" width="480" height="480"/>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
